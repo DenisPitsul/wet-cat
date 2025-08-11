@@ -1,5 +1,6 @@
 {
-  "name": "wetcat",
+  "name": "wet-cat",
+  "homepage": "https://DenisPitsul.github.io/wet-cat",
   "version": "1.0.0",
   "description": "Wet cat",
   "main": "index.js",
@@ -8,8 +9,10 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
-    "svgSpriteTask": "gulp svgSpriteTask"
+    "deploy-ftp": "gulp deployFTP --build",
+    "svgSpriteTask": "gulp svgSpriteTask",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Pitsul Denis",
   "license": "ISC",
