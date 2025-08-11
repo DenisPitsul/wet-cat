@@ -1,0 +1,31 @@
+@use "../utils/variables" as variables;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  background-color: variables.$color-bg;
+  font-size: 14px;
+  font-weight: 400;
+  color: variables.$color-text1;
+  margin: 0;
+  min-width: variables.$mobile-min-width;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  font-family: Manrope, sans-serif;
+}

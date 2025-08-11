@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html-partials/base/head.html', { "title": "Wet cat" })
+  @@include('html-partials/base/symbol/sprite.html', {})
+
+  <body>
+    <div class="page">
+      @@include('html-partials/base/backdrop.html', {})
+      @@include('html-partials/base/side-menu.html', {})
+      <div class="page__content">
+        @@include('html-partials/base/header.html', {})
+
+        <main></main>
+      </div>
+    </div>
+
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
