@@ -1,0 +1,178 @@
+@use "../../utils/variables" as variables;
+@use "../../utils/mixins" as mixins;
+
+.popular-services {
+  padding-top: 100px;
+
+  @include mixins.on-laptop {
+    padding-top: 162px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 41px;
+
+    @include mixins.on-tablet {
+      justify-content: space-between;
+    }
+
+    @include mixins.on-laptop {
+      margin-bottom: 62px;
+    }
+  }
+
+  &__title {
+    max-width: 516px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0%;
+    align-self: flex-start;
+
+    @include mixins.on-tablet {
+      font-size: 48px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include mixins.on-tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    padding: 9.5px 21px;
+
+    @include mixins.on-laptop {
+      padding: 11px 24px;
+      font-size: 16px;
+    }
+  }
+
+  &__swiper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__swiper-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  &__swiper-container {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &__swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    background: variables.$color-green-gradient-bg;
+    border-radius: 8px;
+    padding: 28px 32px 25px;
+    transition: all 0.3s ease;
+    min-height: 264px;
+
+    &:hover {
+      background: none;
+      background-color: variables.$color-primary;
+    }
+  }
+
+  &__swiper-slide > * {
+    flex-shrink: 0;
+  }
+
+  &__swiper-slide-text {
+    flex-grow: 1;
+  }
+
+  &__swiper-slide-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+
+  &__swiper-slide:hover &__swiper-slide-title {
+    color: variables.$color-bg;
+  }
+
+  &__swiper-slide-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: variables.$color-text2;
+    margin-bottom: 33px;
+    transition: color 0.3s ease;
+  }
+
+  &__swiper-slide:hover &__swiper-slide-text {
+    color: variables.$color-bg;
+  }
+
+  &__swiper-slide-link {
+    margin-top: auto !important;
+    align-self: flex-end !important;
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: variables.$color-bg;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__swiper-slide:hover &__swiper-slide-link {
+    opacity: 1;
+  }
+
+  &__swiper-btn-prev-wrapper {
+    position: relative;
+    width: 43px;
+    height: 264px;
+  }
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    background-color: variables.$color-bg;
+    position: relative;
+    z-index: 10;
+    flex: 0 0 43px;
+    height: 284px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &__swiper-button-prev {
+    box-shadow: 5px 0 5px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  &__swiper-button-next {
+    box-shadow: -5px 0 5px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: none !important;
+  }
+}

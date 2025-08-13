@@ -1,0 +1,12 @@
+@use "../../utils/variables" as variables;
+@use "../../utils/mixins" as mixins;
+
+.main-container {
+  position: relative;
+  min-width: 375px;
+  width: 100%;
+  max-width: 1256px;
+  margin-inline: auto;
+
+  @include mixins.content-padding-inline;
+}

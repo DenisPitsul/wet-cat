@@ -1,4 +1,4 @@
-@use "./variables" as variables;
+@use "variables" as variables;
 
 @mixin on-tablet {
   @media (min-width: variables.$tablet-min-width) {
@@ -15,5 +15,16 @@
 @mixin on-desktop {
   @media (min-width: variables.$desktop-min-width) {
     @content;
+  }
+}
+
+@mixin content-padding-inline {
+  padding-inline: 16px;
+
+  @include on-tablet {
+    padding-inline: 24px;
+  }
+  @include on-laptop {
+    padding-inline: 32px;
   }
 }

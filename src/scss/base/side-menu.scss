@@ -2,7 +2,7 @@
 @use "../utils/mixins" as mixins;
 
 .side-menu {
-  width: variables.$side-menu-width !important;
+  width: variables.$side-menu-width;
   flex-shrink: 0;
   position: fixed;
   top: 0;
@@ -26,7 +26,7 @@
   }
 
   @include mixins.on-laptop {
-    position: static;
+    position: fixed;
     transform: translateX(0);
     pointer-events: all;
     opacity: 1;

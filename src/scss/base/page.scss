@@ -1,3 +1,5 @@
+@use "../utils/mixins" as mixins;
+
 .page {
   height: 100%;
   margin: 0;
@@ -6,5 +8,9 @@
 
   &__content {
     width: 100%;
+
+    @include mixins.on-laptop {
+      padding-left: 300px;
+    }
   }
 }

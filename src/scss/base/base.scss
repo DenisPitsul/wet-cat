@@ -29,3 +29,43 @@ input,
 button {
   font-family: Manrope, sans-serif;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.btn {
+  border-radius: 16px;
+  padding: 11px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: variables.$color-primary;
+  color: variables.$color-bg;
+  border: 2px solid variables.$color-primary;
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-primary-hover;
+    border: 2px solid variables.$color-primary-hover;
+  }
+}
+
+.btn-secondary {
+  background-color: variables.$color-bg;
+  color: variables.$color-text2;
+  border: 2px solid variables.$color-primary;
+
+  &:hover,
+  &:focus {
+    color: variables.$color-primary-hover;
+    border: 2px solid variables.$color-primary-hover;
+  }
+}

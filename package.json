@@ -52,6 +52,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "firebase": "^12.1.0",
     "gulp-fonter": "^0.3.0",
     "swiper": "^11.2.10"
   }

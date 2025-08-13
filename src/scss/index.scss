@@ -10,3 +10,8 @@
 @use "base/backdrop";
 @use "base/side-menu";
 @use "base/header";
+
+@use "pages/main/main-base";
+@use "pages/main/hero";
+@use "pages/main/popular-services";
+@use "pages/main/wet-cat-is";

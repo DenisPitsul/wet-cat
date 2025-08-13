@@ -1,0 +1,67 @@
+@use "../../utils/variables" as variables;
+@use "../../utils/mixins" as mixins;
+
+.hero {
+  background: variables.$color-green-gradient-bg;
+  border-top: 1px solid variables.$color-border;
+
+  &__bg {
+    height: 100%;
+    background-image: url(../../../assets/img/main/puppy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left calc(80% + 283px) center;
+    padding-block: 113px 174px;
+
+    @include mixins.on-tablet {
+      background-position: left calc(100% + 240px) center;
+    }
+  }
+
+  &__title {
+    max-width: 712px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.1875;
+    letter-spacing: 0%;
+    margin-bottom: 33px;
+
+    @include mixins.on-tablet {
+      font-size: 45px;
+    }
+
+    @include mixins.on-laptop {
+      font-size: 60px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    padding-left: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 14.5px;
+      width: 6px;
+      height: 6px;
+      background-color: variables.$color-primary;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 32px;
+    bottom: -214px;
+  }
+}

@@ -5,4 +5,5 @@ const backdrop = document.querySelector(".backdrop");
 burgerOpenBtn.addEventListener("click", () => {
   sideMenu.classList.add("side-menu--opened");
   backdrop.classList.add("backdrop--active");
+  document.body.classList.add("no-scroll");
 });

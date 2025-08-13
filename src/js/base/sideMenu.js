@@ -30,6 +30,7 @@ const backdrop = document.querySelector(".backdrop");
 function closeMenu() {
   sideMenu.classList.remove("side-menu--opened");
   backdrop.classList.remove("backdrop--active");
+  document.body.classList.remove("no-scroll");
 }
 
 backdrop.addEventListener("click", closeMenu);
