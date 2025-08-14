@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -1259,7 +1257,7 @@ button {
   border-top: 1px solid #cfdfe5;
 }
 
-.no-webp .hero__bg{
+.no-webp .hero__bg {
   background-image: url(../assets/img/main/puppy.png); }
 
 .hero__bg {
@@ -1628,7 +1626,7 @@ button {
   position: relative;
 }
 
-.no-webp .wet-cat-is__union{
+.no-webp .wet-cat-is__union {
   background-image: url(../assets/img/main/union.png); }
 
 .wet-cat-is__union {
@@ -1642,7 +1640,7 @@ button {
   background-size: 300px 347px;
 }
 
-.no-webp .wet-cat-is__ellipse{
+.no-webp .wet-cat-is__ellipse {
   background-image: url(../assets/img/main/ellipse.png); }
 
 .wet-cat-is__ellipse {
@@ -1724,6 +1722,19 @@ button {
   margin-bottom: 32px;
 }
 
+.patient-history__title {
+  max-width: 785px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.17;
+  letter-spacing: 0%;
+}
+
+.patient-history__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .patient-history__swiper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1739,7 +1750,6 @@ button {
       -ms-flex: 1;
           flex: 1;
   overflow: hidden;
-  /* display: flex прибрали! */
   width: 100%;
 }
 
@@ -2005,8 +2015,8 @@ button {
   }
 }
 
-.webp .hero__bg{ background-image: url(../assets/img/main/puppy.webp); }
+.webp .hero__bg { background-image: url(../assets/img/main/puppy.webp); }
 
-.webp .wet-cat-is__union{ background-image: url(../assets/img/main/union.webp); }
+.webp .wet-cat-is__union { background-image: url(../assets/img/main/union.webp); }
 
-.webp .wet-cat-is__ellipse{ background-image: url(../assets/img/main/ellipse.webp); }
+.webp .wet-cat-is__ellipse { background-image: url(../assets/img/main/ellipse.webp); }
