@@ -1811,7 +1811,7 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 43px;
           flex: 0 0 43px;
-  height: 440px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
