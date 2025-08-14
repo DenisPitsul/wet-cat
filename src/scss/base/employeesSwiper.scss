@@ -19,12 +19,20 @@
   }
 
   &__slide {
-    &:hover .employees__swiper-slide-img-bg {
+    &:hover .employees-swiper__slide-img-bg {
       background-color: #192224;
       opacity: 0.2;
     }
-    &:hover .employees__swiper-slide-schedule {
+    &:hover .employees-swiper__slide-schedule {
       transform: translateY(0);
+    }
+
+    &:hover .employees-swiper__slide-title {
+      color: variables.$color-primary;
+    }
+
+    &:hover .employees-swiper__slide-text {
+      color: variables.$color-primary;
     }
   }
 
@@ -103,6 +111,7 @@
     line-height: 1.2;
     letter-spacing: 0%;
     margin-bottom: 6px;
+    transition: color 0.3s ease;
   }
 
   &__slide-text {
@@ -110,6 +119,7 @@
     font-size: 14.7px;
     line-height: 1.5;
     letter-spacing: 0%;
+    transition: color 0.3s ease;
   }
 
   &__button-prev,
