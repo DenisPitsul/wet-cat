@@ -1909,7 +1909,7 @@ button {
 
 .blog__content-article-title {
   font-weight: 700;
-  font-size: 27.5px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0%;
   margin-bottom: 15px;
@@ -1917,7 +1917,7 @@ button {
 
 .blog__content-article-date {
   font-weight: 400;
-  font-size: 12.84px;
+  font-size: 13.5px;
   line-height: 1.43;
   letter-spacing: 0%;
   color: #797c80;
@@ -1944,7 +1944,7 @@ button {
 
 .blog__content-articles-title {
   font-weight: 700;
-  font-size: 15.6px;
+  font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0%;
   margin-bottom: 6px;
@@ -1952,7 +1952,7 @@ button {
 
 .blog__content-articles-date {
   font-weight: 400;
-  font-size: 12.8px;
+  font-size: 13.5px;
   line-height: 1.43;
   letter-spacing: 0%;
   color: #797c80;
