@@ -27,7 +27,7 @@ async function getServices() {
               <span>Подробнее</span>
               <img
                 class="popular-services__swiper-slide-arrow-icon"
-                src="../../assets/svg/main/arrow-right.svg"
+                src="assets/svg/main/arrow-right.svg"
                 alt="Arrow right"
               />
             </a>
