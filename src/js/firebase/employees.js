@@ -76,9 +76,11 @@ function initSwiper() {
     breakpoints: {
       768: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
-      1440: {
+      1200: {
         slidesPerView: 3,
+        spaceBetween: 40,
       },
     },
   });

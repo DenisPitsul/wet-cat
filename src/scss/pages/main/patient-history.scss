@@ -5,6 +5,10 @@
   background-color: variables.$color-bg3;
   padding-top: 90px;
 
+  @include mixins.on-laptop {
+    padding-top: 130px;
+  }
+
   &__top {
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +84,7 @@
   &__swiper-slide-date {
     font-weight: 400;
     font-size: 12.8px;
+    color: variables.$color-text3;
     transition: color 0.3s ease;
   }
 

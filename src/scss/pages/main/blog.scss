@@ -1,0 +1,105 @@
+@use "../../utils/variables" as variables;
+@use "../../utils/mixins" as mixins;
+
+.blog {
+  padding-block: 100px 106px;
+
+  @include mixins.on-laptop {
+    padding-block: 154px 163px;
+  }
+
+  & .main-container {
+    max-width: 1176px;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    max-width: 730px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.17;
+    letter-spacing: 0%;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mixins.on-tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__content-article {
+    max-width: 728px;
+    flex-grow: 1;
+
+    @include mixins.on-tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__content-article-img {
+    max-width: 728px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__content-article-title {
+    font-weight: 700;
+    font-size: 27.5px;
+    line-height: 1.17;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+  }
+
+  &__content-article-date {
+    font-weight: 400;
+    font-size: 12.84px;
+    line-height: 1.43;
+    letter-spacing: 0%;
+    color: variables.$color-text3;
+  }
+
+  &__content-articles-list {
+    align-self: flex-start;
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  &__content-articles-item {
+    border-top: 1px solid #cfdfe5;
+    padding-top: 15px;
+  }
+
+  &__content-articles-title {
+    font-weight: 700;
+    font-size: 15.6px;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    margin-bottom: 6px;
+  }
+
+  &__content-articles-date {
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 1.43;
+    letter-spacing: 0%;
+    color: variables.$color-text3;
+  }
+}
