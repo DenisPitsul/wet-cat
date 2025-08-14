@@ -1086,15 +1086,23 @@ button {
           flex: 1;
 }
 
-.employees-swiper__slide:hover .employees__swiper-slide-img-bg {
+.employees-swiper__slide:hover .employees-swiper__slide-img-bg {
   background-color: #192224;
   opacity: 0.2;
 }
 
-.employees-swiper__slide:hover .employees__swiper-slide-schedule {
+.employees-swiper__slide:hover .employees-swiper__slide-schedule {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+}
+
+.employees-swiper__slide:hover .employees-swiper__slide-title {
+  color: #1dc3b0;
+}
+
+.employees-swiper__slide:hover .employees-swiper__slide-text {
+  color: #1dc3b0;
 }
 
 .employees-swiper__slide-wrapper {
@@ -1184,6 +1192,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0%;
   margin-bottom: 6px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .employees-swiper__slide-text {
@@ -1191,6 +1201,8 @@ button {
   font-size: 14.7px;
   line-height: 1.5;
   letter-spacing: 0%;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .employees-swiper__button-prev,
