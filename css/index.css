@@ -1800,6 +1800,7 @@ button {
 .patient-history__swiper-slide-date {
   font-weight: 400;
   font-size: 12.8px;
+  color: #797c80;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -1846,6 +1847,115 @@ button {
   max-width: 436px;
   width: 100%;
   margin-inline: auto;
+}
+
+.blog {
+  padding-block: 100px 106px;
+}
+
+.blog .main-container {
+  max-width: 1176px;
+}
+
+.blog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.blog__title {
+  max-width: 730px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.17;
+  letter-spacing: 0%;
+}
+
+.blog__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.blog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.blog__content-article {
+  max-width: 728px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.blog__content-article-img {
+  max-width: 728px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.blog__content-article-title {
+  font-weight: 700;
+  font-size: 27.5px;
+  line-height: 1.17;
+  letter-spacing: 0%;
+  margin-bottom: 15px;
+}
+
+.blog__content-article-date {
+  font-weight: 400;
+  font-size: 12.84px;
+  line-height: 1.43;
+  letter-spacing: 0%;
+  color: #797c80;
+}
+
+.blog__content-articles-list {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 19px;
+}
+
+.blog__content-articles-item {
+  border-top: 1px solid #cfdfe5;
+  padding-top: 15px;
+}
+
+.blog__content-articles-title {
+  font-weight: 700;
+  font-size: 15.6px;
+  line-height: 1.18;
+  letter-spacing: 0%;
+  margin-bottom: 6px;
+}
+
+.blog__content-articles-date {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 1.43;
+  letter-spacing: 0%;
+  color: #797c80;
 }
 
 @media (min-width: 768px) {
@@ -1920,6 +2030,23 @@ button {
     top: -13px;
     width: 438px;
     height: 450px;
+  }
+
+  .blog__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .blog__content-article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -2019,6 +2146,14 @@ button {
 
   .employees {
     padding-block: 282px 136px;
+  }
+
+  .patient-history {
+    padding-top: 130px;
+  }
+
+  .blog {
+    padding-block: 154px 163px;
   }
 }
 
