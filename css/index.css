@@ -1246,7 +1246,7 @@ button {
 }
 
 .no-webp .hero__bg {
-  background-image: url(../../../assets/img/main/puppy.png); }
+  background-image: url(../assets/img/main/puppy.png); }
 
 .hero__bg {
   height: 100%;
@@ -1866,7 +1866,7 @@ button {
   }
 }
 
-.webp .hero__bg { background-image: url(../../../assets/img/main/puppy.webp); }
+.webp .hero__bg { background-image: url(../assets/img/main/puppy.webp); }
 
 .webp .wet-cat-is__union { background-image: url(../../../assets/img/main/union.webp); }
 
