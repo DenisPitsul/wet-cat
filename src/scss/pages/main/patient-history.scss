@@ -1,3 +1,6 @@
+@use "../../utils/variables" as variables;
+@use "../../utils/mixins" as mixins;
+
 .patient-history {
   background-color: variables.$color-bg3;
   padding-top: 90px;
