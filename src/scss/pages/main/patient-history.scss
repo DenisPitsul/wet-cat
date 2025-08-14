@@ -13,6 +13,18 @@
     margin-bottom: 32px;
   }
 
+  &__title {
+    max-width: 785px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.17;
+    letter-spacing: 0%;
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+
   &__swiper {
     display: flex;
     align-items: center;
@@ -22,12 +34,11 @@
   &__swiper-container {
     flex: 1;
     overflow: hidden;
-    /* display: flex прибрали! */
     width: 100%;
   }
 
   &__swiper-wrapper {
-    display: flex; // обов’язково
+    display: flex;
   }
 
   &__swiper-slide-wrapper {
