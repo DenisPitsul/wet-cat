@@ -1841,6 +1841,13 @@ button {
   content: none !important;
 }
 
+.patient-history__bottom-img {
+  display: block;
+  max-width: 436px;
+  width: 100%;
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .main-container {
     padding-inline: 24px;
