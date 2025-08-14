@@ -1627,7 +1627,7 @@ button {
 }
 
 .no-webp .wet-cat-is__union {
-  background-image: url(../../../assets/img/main/union.png); }
+  background-image: url(/assets/img/main/union.png); }
 
 .wet-cat-is__union {
   position: absolute;
@@ -1641,7 +1641,7 @@ button {
 }
 
 .no-webp .wet-cat-is__ellipse {
-  background-image: url(../../../assets/img/main/ellipse.png); }
+  background-image: url(/assets/img/main/ellipse.png); }
 
 .wet-cat-is__ellipse {
   position: absolute;
@@ -2051,6 +2051,6 @@ button {
 
 .webp .hero__bg { background-image: url(/assets/img/main/puppy.webp); }
 
-.webp .wet-cat-is__union { background-image: url(../../../assets/img/main/union.webp); }
+.webp .wet-cat-is__union { background-image: url(/assets/img/main/union.webp); }
 
-.webp .wet-cat-is__ellipse { background-image: url(../../../assets/img/main/ellipse.webp); }
+.webp .wet-cat-is__ellipse { background-image: url(/assets/img/main/ellipse.webp); }
