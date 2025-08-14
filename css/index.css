@@ -1258,7 +1258,7 @@ button {
 }
 
 .no-webp .hero__bg {
-  background-image: url(../../assets/img/main/puppy.png); }
+  background-image: url(/assets/img/main/puppy.png); }
 
 .hero__bg {
   height: 100%;
@@ -1704,6 +1704,173 @@ button {
       align-self: flex-end;
 }
 
+.patient-history {
+  background-color: #eef3f7;
+  padding-top: 90px;
+}
+
+.patient-history__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.patient-history__title {
+  max-width: 785px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.17;
+  letter-spacing: 0%;
+}
+
+.patient-history__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.patient-history__swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.patient-history__swiper-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.patient-history__swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.patient-history__swiper-slide:hover .patient-history__swiper-slide-img-bg {
+  background-color: #192224;
+  opacity: 0.2;
+}
+
+.patient-history__swiper-slide:hover .patient-history__swiper-slide-title {
+  color: #1dc3b0;
+}
+
+.patient-history__swiper-slide:hover .patient-history__swiper-slide-date {
+  color: #1dc3b0;
+}
+
+.patient-history__swiper-slide-wrapper {
+  max-width: 248px;
+  margin-inline: auto;
+  padding-block: 32px;
+}
+
+.patient-history__swiper-slide-img-wrapper {
+  position: relative;
+  margin-inline: auto;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.patient-history__swiper-slide-img-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  background-color: transparent;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.patient-history__swiper-slide-img {
+  width: 100%;
+}
+
+.patient-history__swiper-slide-title {
+  font-weight: 700;
+  font-size: 18.4px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.patient-history__swiper-slide-date {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 1.43;
+  letter-spacing: 0%;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.patient-history__swiper-button-prev,
+.patient-history__swiper-button-next {
+  background-color: #eef3f7;
+  position: relative;
+  z-index: 10;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 43px;
+          flex: 0 0 43px;
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.patient-history__swiper-button-prev {
+  -webkit-box-shadow: 5px 0 5px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0 5px -4px rgba(0, 0, 0, 0.3);
+}
+
+.patient-history__swiper-button-next {
+  -webkit-box-shadow: -5px 0 5px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 0 5px -4px rgba(0, 0, 0, 0.3);
+}
+
+.patient-history .swiper-button-prev::after,
+.patient-history .swiper-button-next::after {
+  content: none !important;
+}
+
+.patient-history__bottom-img {
+  display: block;
+  max-width: 436px;
+  width: 100%;
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .main-container {
     padding-inline: 24px;
@@ -1876,9 +2043,13 @@ button {
   .employees {
     padding-block: 282px 136px;
   }
+
+  .patient-history {
+    padding-top: 130px;
+  }
 }
 
-.webp .hero__bg { background-image: url(../../assets/img/main/puppy.webp); }
+.webp .hero__bg { background-image: url(/assets/img/main/puppy.webp); }
 
 .webp .wet-cat-is__union { background-image: url(../../../assets/img/main/union.webp); }
 
