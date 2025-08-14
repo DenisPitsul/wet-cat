@@ -1,3 +1,4 @@
+import "./base/webp.js";
 import "./base/header.js";
 import "./base/sideMenu.js";
 import "./base/employeesSwiper.js";
