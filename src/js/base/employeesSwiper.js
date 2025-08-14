@@ -2,14 +2,14 @@ import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 
-const swiper = new Swiper(".employees__swiper-container", {
+const swiper = new Swiper(".employees-swiper__container", {
   modules: [Navigation],
   loop: true,
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
-    nextEl: ".employees__swiper-button-next",
-    prevEl: ".employees__swiper-button-prev",
+    nextEl: ".employees-swiper__button-next",
+    prevEl: ".employees-swiper__button-prev",
   },
   breakpoints: {
     768: {

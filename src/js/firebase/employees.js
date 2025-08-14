@@ -12,7 +12,7 @@ async function getEmployees() {
     ...doc.data(),
   }));
 
-  const container = document.querySelector(".employees__swiper-wrapper");
+  const container = document.querySelector(".employees-swiper__wrapper");
 
   if (container) {
     container.innerHTML = employeesList
@@ -23,33 +23,33 @@ async function getEmployees() {
           position,
           workingTime1,
           workingTime2,
-        }) => `<div class="employees__swiper-slide swiper-slide">
-            <div class="employees__swiper-slide-wrapper">
-              <div class="employees__swiper-slide-img-wrapper">
-                <div class="employees__swiper-slide-img-bg"></div>
+        }) => `<div class="employees-swiper__slide swiper-slide">
+            <div class="employees-swiper__slide-wrapper">
+              <div class="employees-swiper__slide-img-wrapper">
+                <div class="employees-swiper__slide-img-bg"></div>
                 <img
-                  class="employees__swiper-slide-img"
+                  class="employees-swiper__slide-img"
                   src="${imagePath}"
                   alt="${name}"
                 />
-                <div class="employees__swiper-slide-schedule">
-                  <span class="employees__swiper-slide-label">
+                <div class="employees-swiper__slide-schedule">
+                  <span class="employees-swiper__slide-label">
                     Ближайшие приемы
                   </span>
-                  <div class="employees__swiper-slide-schedule-line"></div>
-                  <span class="employees__swiper-slide-time1"
+                  <div class="employees-swiper__slide-schedule-line"></div>
+                  <span class="employees-swiper__slide-time1"
                     >${workingTime1}</span
                   >
-                  <div class="employees__swiper-slide-schedule-line"></div>
-                  <span class="employees__swiper-slide-time2"
+                  <div class="employees-swiper__slide-schedule-line"></div>
+                  <span class="employees-swiper__slide-time2"
                     >${workingTime2}</span
                   >
                 </div>
               </div>
-              <h3 class="employees__swiper-slide-title">
+              <h3 class="employees-swiper__slide-title">
                 ${name}
               </h3>
-              <p class="employees__swiper-slide-text">
+              <p class="employees-swiper__slide-text">
                 ${position}
               </p>
             </div>
