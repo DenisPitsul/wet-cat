@@ -12,10 +12,7 @@ async function getServices() {
     ...doc.data(),
   }));
 
-  console.log("Services:", popularServicesList);
-
   const container = document.querySelector(".popular-services__swiper-wrapper");
-  console.log(container);
 
   if (container) {
     container.innerHTML = popularServicesList
