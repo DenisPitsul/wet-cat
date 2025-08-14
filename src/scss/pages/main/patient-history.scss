@@ -1,13 +1,6 @@
-@use "../../utils/variables" as variables;
-@use "../../utils/mixins" as mixins;
-
 .patient-history {
   background-color: variables.$color-bg3;
   padding-top: 90px;
-
-  @include mixins.on-laptop {
-    padding-top: 130px;
-  }
 
   &__top {
     display: flex;
@@ -15,18 +8,6 @@
     gap: 20px;
     justify-content: space-between;
     margin-bottom: 32px;
-  }
-
-  &__title {
-    max-width: 785px;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 1.17;
-    letter-spacing: 0%;
-  }
-
-  &__btn {
-    align-self: flex-end;
   }
 
   &__swiper {
@@ -38,28 +19,12 @@
   &__swiper-container {
     flex: 1;
     overflow: hidden;
-    display: flex;
+    /* display: flex прибрали! */
+    width: 100%;
   }
 
   &__swiper-wrapper {
-    display: flex;
-    width: 100%;
-    flex: 1;
-  }
-
-  &__swiper-slide {
-    &:hover .patient-history__swiper-slide-img-bg {
-      background-color: #192224;
-      opacity: 0.2;
-    }
-
-    &:hover .patient-history__swiper-slide-title {
-      color: variables.$color-primary;
-    }
-
-    &:hover .patient-history__swiper-slide-date {
-      color: variables.$color-primary;
-    }
+    display: flex; // обов’язково
   }
 
   &__swiper-slide-wrapper {
@@ -94,8 +59,6 @@
   &__swiper-slide-title {
     font-weight: 700;
     font-size: 18.4px;
-    line-height: 1.2;
-    letter-spacing: 0%;
     margin-bottom: 12px;
     transition: color 0.3s ease;
   }
@@ -103,16 +66,12 @@
   &__swiper-slide-date {
     font-weight: 400;
     font-size: 12.8px;
-    line-height: 1.43;
-    letter-spacing: 0%;
     transition: color 0.3s ease;
   }
 
   &__swiper-button-prev,
   &__swiper-button-next {
     background-color: variables.$color-bg3;
-    position: relative;
-    z-index: 10;
     flex: 0 0 43px;
     height: 440px;
     display: flex;
@@ -120,6 +79,8 @@
     justify-content: center;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
+    z-index: 10;
   }
 
   &__swiper-button-prev {
@@ -133,12 +94,5 @@
   .swiper-button-prev::after,
   .swiper-button-next::after {
     content: none !important;
-  }
-
-  &__bottom-img {
-    display: block;
-    max-width: 436px;
-    width: 100%;
-    margin-inline: auto;
   }
 }
